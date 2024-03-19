@@ -1,41 +1,48 @@
 
-class Calculator {
+class Calculator extends Extended_Calculator {
   
-    float addition (float num1,float num2){
-        return(num1+num2);
+    float addition (float a,float b){
+        return(a+b);
     }
    
-    float substraction (float num1,float num2){
-        return(num1-num2);
+    float substraction (float a,float b){
+        return(a-b);
     }
 
-    float multiplication (float num1,float num2){
-        return(num1*num2);
+    float multiplication (float a,float b){
+        return(a*b);
     }
 
 
-    float division(float num1,float num2){
-        return(num1/num2);
+    float division(float a,float b){
+        return(a/b);
     }
 
 public static void main(String []args){
     Calculator calc=new Calculator();
 
-    float num1=10;
+    float a=10;
     
-    float num2=20;
+    float b=20;
+
+   int n= 2;
     
-        float add=calc.addition(num1,num2);
+        float add=calc.addition(a,b);
         System.out.println("Addition of two Numbers:"+add);
  
-        float sub=calc.substraction(num1,num2);
+        float sub=calc.substraction(a,b);
         System.out.println("Substraction :"+sub);
      
-        float mul=calc.multiplication(num1,num2);
+        float mul=calc.multiplication(a,b);
         System.out.println("Multiplication:"+mul);
                 
-        float div=calc.division(num1,num2);
+        float div=calc.division(a,b);
         System.out.println("Division:"+div);
-        
+
+        float square=calc.square(n);
+        System.out.println("Square:"+square);
+
+        float cube=calc.cube(n);
+        System.out.println("Cube:"+cube);
     }
 }
